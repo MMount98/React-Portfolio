@@ -6,10 +6,13 @@ import { TypeAnimation } from "react-type-animation";
 
 const styles = {
   img: {
-    width: "auto",
     height: "auto",
-    maxWidth: "100%",
-    maxHeight: "100%",
+    maxWidth: "70%",
+    maxHeight: "70%",
+    overflow: "hidden"
+  },
+  row: {
+    height: "70vh",
   },
 };
 
@@ -17,9 +20,9 @@ function AboutMe() {
   return (
     <>
       <Container className="td-flex flex-column">
-        <Row className="align-items-center">
-          <Col>
-            <span style={{ fontSize: "5em" }}>
+        <Row className="align-items-center" >
+          <Col lg={7}>
+            <span style={{ fontSize: "4.5em" }}>
               <span>I am </span>{" "}
               <TypeAnimation
                 sequence={[
@@ -40,8 +43,9 @@ function AboutMe() {
               />
             </span>
           </Col>
-          <Col>
+          <Col lg={5} className="p-3">
             <Image
+            rounded
               src="./images/AboutMe.jpg"
               style={styles.img}
               alt="Michael Mount Headshot"
@@ -70,14 +74,14 @@ function AboutMe() {
             </p>
           </Col>
           <Col>
-                <h2>Skills</h2>
-                    <ul>
-                        <li>JavaScript</li>
-                        <li>Node.js</li>
-                        <li>SQL</li>
-                        <li>MongoDB</li>
-                        <li>React</li>
-                    </ul>
+            <h2>Skills</h2>
+            <ul>
+              <li>JavaScript</li>
+              <li>Node.js</li>
+              <li>SQL</li>
+              <li>MongoDB</li>
+              <li>React</li>
+            </ul>
           </Col>
         </Row>
       </Container>
