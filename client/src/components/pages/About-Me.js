@@ -9,7 +9,7 @@ const styles = {
     height: "auto",
     maxWidth: "70%",
     maxHeight: "70%",
-    overflow: "hidden"
+    overflow: "hidden",
   },
   row: {
     height: "70vh",
@@ -20,7 +20,7 @@ function AboutMe() {
   return (
     <>
       <Container className="td-flex flex-column">
-        <Row className="align-items-center" >
+        <Row className="align-items-center">
           <Col lg={7}>
             <span style={{ fontSize: "4.5em" }}>
               <span>I am </span>{" "}
@@ -45,7 +45,7 @@ function AboutMe() {
           </Col>
           <Col lg={5} className="p-3">
             <Image
-            rounded
+              rounded
               src="./images/AboutMe.jpg"
               style={styles.img}
               alt="Michael Mount Headshot"
@@ -54,8 +54,8 @@ function AboutMe() {
         </Row>
       </Container>
       <Container>
-        <Row>
-          <Col>
+        <Row className="align-items-center">
+          <Col className="p-5">
             <h2>About Me</h2>
             <p>
               Hello, my name is Michael Mount! I am a current Denver Univeristy
@@ -73,14 +73,14 @@ function AboutMe() {
               project!
             </p>
           </Col>
-          <Col>
+          <Col lg={4}>
             <h2>Skills</h2>
             <ul>
               <li>JavaScript</li>
-              <li>Node.js</li>
-              <li>SQL</li>
-              <li>MongoDB</li>
               <li>React</li>
+              <li>Node.js</li>
+              <li>MongoDB</li>
+              <li>GraphQL</li>
             </ul>
           </Col>
         </Row>
