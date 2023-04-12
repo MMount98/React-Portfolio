@@ -4,6 +4,8 @@ import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
 import { TypeAnimation } from "react-type-animation";
 
+document.title = 'About Me'
+
 const styles = {
   img: {
     height: "auto",
@@ -19,7 +21,7 @@ const styles = {
 function AboutMe() {
   return (
     <>
-      <Container className="td-flex flex-column">
+      <Container className="d-flex flex-column">
         <Row className="align-items-center">
           <Col lg={7}>
             <span style={{ fontSize: "4.5em" }}>

@@ -17,6 +17,9 @@ function Bar() {
             <Link className="nav-link" to="/portfolio">
               Portfolio
             </Link>
+            <Link className="nav-link" to="/contact">
+              Contact Me
+            </Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
