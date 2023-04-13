@@ -7,7 +7,7 @@
 //     secure: true,
 //     auth: {
 //       user: "mount.photos@gmail.com",
-//       pass: "gtmkphruczuicrnq",
+//       pass: "",
 //     },
 //   });
 
