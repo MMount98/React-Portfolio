@@ -1,10 +1,9 @@
+import { useEffect } from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
 import { TypeAnimation } from "react-type-animation";
-
-document.title = 'About Me'
 
 const styles = {
   img: {
@@ -19,6 +18,9 @@ const styles = {
 };
 
 function AboutMe() {
+  useEffect(() => {
+    document.title = "About Me";
+  }, []);
   return (
     <>
       <Container className="d-flex flex-column">

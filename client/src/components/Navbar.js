@@ -7,7 +7,7 @@ function Bar() {
   return (
     <Navbar bg="light" expand="lg">
       <Container>
-        <Navbar.Brand href="#home">Michael Mount</Navbar.Brand>
+        <Navbar.Brand>Michael Mount</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
@@ -19,6 +19,9 @@ function Bar() {
             </Link>
             <Link className="nav-link" to="/contact">
               Contact Me
+            </Link>
+            <Link className="nav-link" to="/resume">
+              Resume
             </Link>
           </Nav>
         </Navbar.Collapse>
