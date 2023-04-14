@@ -55,10 +55,11 @@ function ContactForm() {
   const findFormErrors = () => {
     const { firstName, lastName, message } = Form;
     const newErrors = {};
-    
+
     if (!firstName || firstName === "") newErrors.name = "cannot be blank!";
-    if (!lastName || lastName === "") newErrors.name = "cannot be blank";
-    if(!message || message === "") newErrors.name = "cannot be Blank";
+    else if (!lastName || lastName === "") newErrors.name = "cannot be blank";
+    else if (!message || message === "") newErrors.name = "cannot be Blank";
+    else return;
 
     return newErrors;
   };
@@ -70,9 +71,8 @@ function ContactForm() {
 
     if (Object.keys(newErrors).length > 0) {
       setErrors(newErrors);
-    } 
+    }
   };
-  
 
   return (
     <Form className="p-5">
@@ -98,6 +98,7 @@ function ContactForm() {
           name="lastName"
           type="text"
           placeholder="Mount"
+          isInvalid={!!errors.name}
         />
       </Form.Group>
       <Form.Group className="mb-2" controlId="formEmail">
@@ -114,11 +115,12 @@ function ContactForm() {
       <Form.Group className="mb-2" controlId="formMessage">
         <Form.Label>Message:</Form.Label>
         <Form.Control
-        name="message"
-        type="message"
+          name="message"
+          type="message"
           as="textarea"
           rows={3}
           placeholder="What can I do for you?"
+          isInvalid={!!errors.name}
         />
       </Form.Group>
       <Button variant="primary" type="submit" onClick={handleSubmit}>
