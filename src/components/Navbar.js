@@ -11,7 +11,7 @@ function Bar() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Link className="nav-link" to="/">
+            <Link className="nav-link" to="/React-Portfolio/">
               About Me
             </Link>
             <Link className="nav-link" to="/portfolio">

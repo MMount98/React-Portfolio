@@ -50,7 +50,7 @@ function AboutMe() {
           <Col lg={5} md={8} className="p-3">
             <Image
               rounded
-              src="./images/AboutMe.jpg"
+              src="./Images/AboutMe.jpg"
               style={styles.img}
               alt="Michael Mount Headshot"
             />

@@ -17,7 +17,7 @@ function Resume() {
             <h2>Full-Stack Web Developer</h2>
           </Col>
           <Col className="">
-            <a href="/Files/MountResume.pdf" download>
+            <a href="./Files/MountResume.pdf" download>
               <Button variant="secondary">Download PDF</Button>
             </a>
           </Col>
