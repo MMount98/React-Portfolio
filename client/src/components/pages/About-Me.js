@@ -25,7 +25,7 @@ function AboutMe() {
     <>
       <Container className="d-flex flex-column">
         <Row className="align-items-center">
-          <Col lg={7}>
+          <Col lg={7} md={4}>
             <span style={{ fontSize: "4.5em" }}>
               <span>I am </span>{" "}
               <TypeAnimation
@@ -47,7 +47,7 @@ function AboutMe() {
               />
             </span>
           </Col>
-          <Col lg={5} className="p-3">
+          <Col lg={5} md={8} className="p-3">
             <Image
               rounded
               src="./images/AboutMe.jpg"
@@ -76,16 +76,6 @@ function AboutMe() {
               to join a team and work with fellow devlopers in building a new
               project!
             </p>
-          </Col>
-          <Col lg={4}>
-            <h2>Skills</h2>
-            <ul>
-              <li>JavaScript</li>
-              <li>React</li>
-              <li>Node.js</li>
-              <li>MongoDB</li>
-              <li>GraphQL</li>
-            </ul>
           </Col>
         </Row>
       </Container>

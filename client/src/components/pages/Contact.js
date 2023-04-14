@@ -1,16 +1,9 @@
 import { useEffect } from "react";
-// import { Mailer } from "../../utlis/helper";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 
 function ContactForm() {
-  // const [firstName, setFirstName] = userState("");
-  // const [lastName, setLastName] = userState("");
-  // const [email, setEmail] = useState("");
-
-  // const handleInputChange = (e) => {
-  //     const {target} = e;
-  // }
+ 
   useEffect(() => {
     document.title = "Contact Me";
   }, []);

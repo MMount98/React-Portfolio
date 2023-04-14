@@ -1,89 +1,202 @@
-import { useEffect } from "react";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
+import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/Col";
-import Image from "react-bootstrap/Image";
+import Row from "react-bootstrap/Row";
+import Button from "react-bootstrap/Button";
+import { Link } from "react-router-dom";
 
 const styles = {
   img: {
-    maxHeight: "15rem",
-    padding: "1rem",
-    overflow: "hidden",
-    objectFit: "cover",
+    maxWidth: "75%",
+    marginLeft: "auto",
+    marginRight: "auto",
   },
-  h2: {
+  h1: {
+    fontSize: "5rem",
     textAlign: "center",
-    fontSize: "4rem",
-    padding: "2rem",
+    margin: "2rem",
   },
 };
 
 function Portfolio() {
-  useEffect(() => {
-    document.title = "Portfolio";
-  }, []);
   return (
     <>
-      <h2 style={styles.h2}>Past Projects:</h2>
-      <Container className="h-100 d-flex align-items-center justify-content-center">
-        <Row className="mx-auto flex-wrap">
-          <Col lg={4}>
-            <a href="https://fast-meadow-68844.herokuapp.com/">
-              <Image
-                src="./images/Jate.jpeg"
-                alt="Link to Text Editor App"
-                style={styles.img}
-                className="hover-shadow"
-              />
-            </a>
-          </Col>
-          <Col lg={4}>
-            <a href="https://tranquil-retreat-10835.herokuapp.com/">
-              <Image
-                src="./images/NoteTaker.jpeg"
-                alt="Link to Note Taker Web App"
-                style={styles.img}
-              />
-            </a>
-          </Col>
-          <Col lg={4}>
-            <a href="https://dry-garden-70856.herokuapp.com/">
-              <Image
-                src="./images/Tech-Blog.jpeg"
-                alt="Link to Tech-Blog App"
-                style={styles.img}
-              />
-            </a>
-          </Col>
-          <Col lg={4}>
-            <a href="https://mmount98.github.io/Javascript_Quiz/">
-              <Image
-                src="./images/JSQuiz.jpeg"
-                alt="Link to Javascript Quiz Web App"
-                style={styles.img}
-              />
-            </a>
-          </Col>
-          <Col lg={4}>
-            <a href="https://github.com/MMount98/Social-Network-API">
-              <Image
-                src="./images/SocialNetwork.jpeg"
-                alt="Link to Social Network Mongo Database"
-                style={styles.img}
-              />
-            </a>
-          </Col>
-          <Col lg={4}>
-            <a href="https://github.com/MMount98/Employee-Tracker-CMS">
-              <Image
-                src="./images/Employee-Tracker.jpeg"
-                alt="Link to Employee SQL Database"
-                style={styles.img}
-              />
-            </a>
-          </Col>
-        </Row>
-      </Container>
+      <h1 style={styles.h1}>Recent Projects:</h1>
+      <Row xs={1} md={2} className=" m-4 p-2">
+        <Col>
+          <Card className=" m-4 p-2">
+            <Card.Img
+              variant="top"
+              src="./Images/Jate.jpeg"
+              style={styles.img}
+            />
+            <Card.Body>
+              <Card.Title>Jate</Card.Title>
+              <Card.Text>
+                <strong>Just Another Text Editor:</strong> Online Text Editor
+                that can be used in-case of loss of Internet Connection. <br />
+                <strong>Tools:</strong>HTML, Bootstrap, Service-Worker, WPA
+              </Card.Text>
+              <Link to="https://fast-meadow-68844.herokuapp.com/">
+                <Button variant="outline-dark" size="lg">
+                  Check It Out!
+                </Button>
+              </Link>
+              <Link
+                className="pl-5"
+                to="https://github.com/MMount98/Text-Editor-App"
+              >
+                <Button variant="outline-dark" size="lg">
+                  GitHub Repo
+                </Button>
+              </Link>
+            </Card.Body>
+          </Card>
+        </Col>
+        <Col>
+          <Card className=" m-4 p-2">
+            <Card.Img
+              variant="top"
+              src="./Images/Tech-Blog.jpeg"
+              style={styles.img}
+            />
+            <Card.Body>
+              <Card.Title>Tech Blog</Card.Title>
+              <Card.Text>
+                <strong>Tech Blog:</strong> A Simple Blog To Allow users to
+                Create Posts and leave Comments on others!
+                <br />
+                <strong>Tools:</strong>HTML, Bootstrap, Node, SQL
+              </Card.Text>
+              <Link to="https://dry-garden-70856.herokuapp.com/">
+                <Button variant="outline-dark" size="lg">
+                  Check It Out!
+                </Button>
+              </Link>
+              <Link className="pl-5" to="https://github.com/MMount98/Tech-Blog">
+                <Button variant="outline-dark" size="lg">
+                  GitHub Repo
+                </Button>
+              </Link>
+            </Card.Body>
+          </Card>
+        </Col>
+        <Col>
+          <Card className=" m-4 p-2">
+            <Card.Img
+              variant="top"
+              src="./Images/NoteTaker.jpeg"
+              style={styles.img}
+            />
+            <Card.Body>
+              <Card.Title>Note Taker</Card.Title>
+              <Card.Text>
+                <strong>Note Taker:</strong> A Simple Web App that Allows for
+                saving Notes in Json File.
+                <br />
+                <strong>Tools:</strong>HTML, Custom CSS, Bootstrap, Javascript
+              </Card.Text>
+              <Link to="https://tranquil-retreat-10835.herokuapp.com/">
+                <Button variant="outline-dark" size="lg">
+                  Check It Out!
+                </Button>
+              </Link>
+              <Link
+                className="pl-5"
+                to="https://github.com/MMount98/Note-Taker"
+              >
+                <Button variant="outline-dark" size="lg">
+                  GitHub Repo
+                </Button>
+              </Link>
+            </Card.Body>
+          </Card>
+        </Col>
+        <Col>
+          <Card className=" m-4 p-2">
+            <Card.Img
+              variant="top"
+              src="./Images/SocialNetwork.jpeg"
+              style={styles.img}
+            />
+            <Card.Body>
+              <Card.Title>Social Network </Card.Title>
+              <Card.Text>
+                <strong>Social Network API:</strong> An API that routes for
+                basic CRUD operations for posting, commenting, Users, and
+                Friends List!
+                <br />
+                <strong>Tools:</strong> Node, MongoDB, Insomnia
+              </Card.Text>
+              <Link
+                className="pl-1"
+                to="https://github.com/MMount98/Social-Network-API"
+              >
+                <Button variant="outline-dark" size="lg">
+                  GitHub Repo
+                </Button>
+              </Link>
+            </Card.Body>
+          </Card>
+        </Col>
+        <Col>
+          <Card className=" m-4 p-2">
+            <Card.Img
+              variant="top"
+              src="./Images/Employee-Tracker.jpeg"
+              style={styles.img}
+            />
+            <Card.Body>
+              <Card.Title>Employee System Tracker </Card.Title>
+              <Card.Text>
+                <strong>Employee System Tracker:</strong> CLI application that
+                stores an Employees information on Department, Manager, Title,
+                and Salary.
+                <br />
+                <strong>Tools:</strong> JavaScript, Node, SQL
+              </Card.Text>
+              <Link
+                className="pl-1"
+                to="https://github.com/MMount98/Employee-Tracker-CMS"
+              >
+                <Button variant="outline-dark" size="lg">
+                  GitHub Repo
+                </Button>
+              </Link>
+            </Card.Body>
+          </Card>
+        </Col>
+        <Col>
+          <Card className=" m-4 p-2">
+            <Card.Img
+              variant="top"
+              src="./Images/JSQuiz.jpeg"
+              style={styles.img}
+            />
+            <Card.Body>
+              <Card.Title>JS Quiz</Card.Title>
+              <Card.Text>
+                <strong>JavaScript Quiz:</strong> A Simple Web Application that
+                host a 10 question Quiz and Stores Score Data in Local Storage.
+                <br />
+                <strong>Tools:</strong>HTML, Custom CSS, JavaScript
+              </Card.Text>
+              <Link to="https://mmount98.github.io/Javascript_Quiz/">
+                <Button variant="outline-dark" size="lg">
+                  Check It Out!
+                </Button>
+              </Link>
+              <Link
+                className="pl-5"
+                to="https://github.com/MMount98/Javascript_Quiz"
+              >
+                <Button variant="outline-dark" size="lg">
+                  GitHub Repo
+                </Button>
+              </Link>
+            </Card.Body>
+          </Card>
+        </Col>
+      </Row>
     </>
   );
 }
