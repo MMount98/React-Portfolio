@@ -5,9 +5,9 @@ import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 
 function Resume() {
-    useEffect(() => {
-        document.title = "Resume";
-      }, []);
+  useEffect(() => {
+    document.title = "Resume";
+  }, []);
   return (
     <>
       <Container>
@@ -17,7 +17,7 @@ function Resume() {
             <h2>Full-Stack Web Developer</h2>
           </Col>
           <Col className="">
-            <a href="./Files/MountResume.pdf" download>
+            <a href="./React-Portfolio/Files/MountResume.pdf" download>
               <Button variant="secondary">Download PDF</Button>
             </a>
           </Col>
