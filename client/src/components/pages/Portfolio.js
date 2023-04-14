@@ -3,6 +3,7 @@ import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
 const styles = {
   img: {
@@ -18,6 +19,9 @@ const styles = {
 };
 
 function Portfolio() {
+  useEffect(() => {
+    document.title = "Portfolio";
+  }, []);
   return (
     <>
       <h1 style={styles.h1}>Recent Projects:</h1>
