@@ -30,7 +30,7 @@ function Portfolio() {
           <Card className=" m-4 p-2">
             <Card.Img
               variant="top"
-              src="./Images/Jate.jpeg"
+              src="./React-Portfolio/Images/Jate.jpeg"
               style={styles.img}
             />
             <Card.Body>
@@ -60,7 +60,7 @@ function Portfolio() {
           <Card className=" m-4 p-2">
             <Card.Img
               variant="top"
-              src="./Images/Tech-Blog.jpeg"
+              src="./React-Portfolio/Images/Tech-Blog.jpeg"
               style={styles.img}
             />
             <Card.Body>
@@ -88,7 +88,7 @@ function Portfolio() {
           <Card className=" m-4 p-2">
             <Card.Img
               variant="top"
-              src="./Images/NoteTaker.jpeg"
+              src="./React-Portfolio/Images/NoteTaker.jpeg"
               style={styles.img}
             />
             <Card.Body>
@@ -119,7 +119,7 @@ function Portfolio() {
           <Card className=" m-4 p-2">
             <Card.Img
               variant="top"
-              src="./Images/SocialNetwork.jpeg"
+              src="./React-Portfolio/Images/SocialNetwork.jpeg"
               style={styles.img}
             />
             <Card.Body>
@@ -146,7 +146,7 @@ function Portfolio() {
           <Card className=" m-4 p-2">
             <Card.Img
               variant="top"
-              src="./Images/Employee-Tracker.jpeg"
+              src="./React-Portfolio/Images/Employee-Tracker.jpeg"
               style={styles.img}
             />
             <Card.Body>
@@ -173,7 +173,7 @@ function Portfolio() {
           <Card className=" m-4 p-2">
             <Card.Img
               variant="top"
-              src="./Images/JSQuiz.jpeg"
+              src="./React-Portfolio/Images/JSQuiz.jpeg"
               style={styles.img}
             />
             <Card.Body>
